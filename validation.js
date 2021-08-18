@@ -1,6 +1,6 @@
 const prompt = require("prompt-sync")();
 let computerSelection = computerPlay();
-let playerSelection = prompt("Make your move: Rock ☄️ | Paper 📄 | Scissors ✂️ ").toLowerCase();
+let playerSelection = prompt(" | Make your move: Rock ☄️ | Paper 📄 | Scissors ✂️ | :  ").toLowerCase();
 let result = " ";
 
 // Computer choice function
@@ -37,6 +37,8 @@ function playRound(computerSelection, playerSelection){
 }
 
 playRound(playerSelection,computerSelection);
+
+console.log("Diana");
 
 
 
