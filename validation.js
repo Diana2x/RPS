@@ -16,7 +16,7 @@ function computerPlay() {
 
  function playRound(){
      let result = " ";
-     let playerSelection = prompt(" | Make your move: Rock ☄️ | Paper 📄 | Scissors ✂️ | :  ").toLowerCase();
+     let playerSelection = prompt(" | Make your move: Rock ☄️ | 📄 | ✂️ | :  ").toLowerCase();
      let computerSelection = computerPlay();
 
       if (computerSelection === "rock" && playerSelection === "scissors") {
