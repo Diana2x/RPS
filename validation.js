@@ -1,7 +1,4 @@
 const prompt = require("prompt-sync")();
-let computerSelection = computerPlay();
-let playerSelection = prompt(" | Make your move: Rock ☄️ | Paper 📄 | Scissors ✂️ | :  ").toLowerCase();
-let result = " ";
 
 // Computer choice function
 
@@ -11,34 +8,41 @@ function computerPlay() {
         return "rock";
    } else if(computerSelection <= 2) {
         return "paper";
-   } else (computerSelection <= 3) 
+   } else
         return "scissors";
    }
 
 // Single round function 
 
-function playRound(computerSelection, playerSelection){
-     if (computerSelection === "rock" && playerSelection === "scissors") {
-          result =  "You lose! Rock beats scissors";
-     }else if (computerSelection === "paper" && playerSelection === "rock"){
-          result =  "You lose! Paper beats rock";
-     }else if (computerSelection === "scissors" && playerSelection ==="paper"){
-          result =  "You lose! scissors beats paper";
-     }else if (computerSelection === "scissors" && playerSelection === "rock"){
-          result = "You win! rock beats scissors";
-     }else if (computerSelection === "rock" && playerSelection === "paper"){
-          result = "You win! paper beats rock";
-     }else if(computerSelection === "paper" && playerSelection === "scissors") {
-          result = "You win! scissors beats paper"
-     }else {
-          result = "it's a tie";
-     }
-     return console.log(result); 
+ function playRound(){
+     let result = " ";
+     let playerSelection = prompt(" | Make your move: Rock ☄️ | Paper 📄 | Scissors ✂️ | :  ").toLowerCase();
+     let computerSelection = computerPlay();
+
+      if (computerSelection === "rock" && playerSelection === "scissors") {
+               result =  "You lose! Rock beats scissors";
+          }else if (computerSelection === "paper" && playerSelection === "rock"){
+               result =  "You lose! Paper beats rock";
+          }else if (computerSelection === "scissors" && playerSelection ==="paper"){
+               result =  "You lose! scissors beats paper";
+          }else if (computerSelection === "scissors" && playerSelection === "rock"){
+               result = "You win! rock beats scissors";
+          }else if (computerSelection === "rock" && playerSelection === "paper"){
+               result = "You win! paper beats rock";
+          }else if(computerSelection === "paper" && playerSelection === "scissors") {
+               result = "You win! scissors beats paper"
+          }else {
+               result = "it's a tie";
+          }
+          console.log(result);
 }
 
-playRound(playerSelection,computerSelection);
-
-console.log("Diana");
-
+//Play 5 round function
+function game() {
+     for (i= 0; i < 5; i++){
+          playRound();
+     }
+}
+game();
 
 
