@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Rampart+One&display=swap");
+
+* {
+  font-weight: 700;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+.bubbles img {
+  width: 50px;
+  animation: bubble 7s linear infinite;
+}
+.bubbles {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: -100px;
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-80vh);
+    opacity: 0;
+  }
+}
+
+.bubbles img:nth-child(1) {
+  animation-delay: 2s;
+  width: 75px;
+}
+.bubbles img:nth-child(2) {
+  animation-delay: 1s;
+}
+.bubbles img:nth-child(3) {
+  animation-delay: 3s;
+  width: 25px;
+}
+.bubbles img:nth-child(4) {
+  animation-delay: 4.5s;
+  width: 20px;
+}
+.bubbles img:nth-child(5) {
+  animation-delay: 3s;
+}
+.bubbles img:nth-child(6) {
+  animation-delay: 6s;
+  width: 90px;
+}
+.bubbles img:nth-child(7) {
+  animation-delay: 7s;
+  width: 70px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Cookie", cursive;
+  font-size: 7em;
+  letter-spacing: 5px;
+  text-shadow: 100px rgb(160, 255, 250);
+}
+.main-game {
+  margin: 30px;
+}
+ul {
+  display: flex;
+  list-style: none;
+}
+.main-game ul li p {
+  text-align: center;
+  font-family: "Rampart One", cursive;
+  margin: 5px;
+}
+.main-game img {
+  padding: 20px;
+  border: 2px solid #f9deff;
+  margin: 10px;
+}
+
+.main-game img:hover {
+  border: 2px solid rgb(160, 255, 250);
+  width: 210px;
+  height: 210px;
+  margin: 5px;
+  cursor: pointer;
+}
+.button {
+  text-align: center;
+}
+.btn {
+  font-family: "Rampart One", cursive;
+  background-color: transparent;
+  width: 200px;
+  height: 50px;
+  font-size: 1.2em;
+  border: 3px solid #f9deff;
+  border-radius: 5px;
+}
+.btn:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  border: 3px solid rgb(160, 255, 250);
+}
+
+footer img {
+  margin: 10px;
+}
+footer img:hover {
+  cursor: pointer;
+}
+footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  height: 60px;
+}

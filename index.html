@@ -8,19 +8,53 @@
         <title> Rock ☄️ | Paper 📄 | Scissors ✂️ </title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
+    <div class="container">
+        <div class="bubbles">
+            <img src="Images/bubble-blue.png">
+            <img src="Images/bubble-green.png">
+            <img src="Images/bubble-pink.png">
+            <img src="Images/bubble-purple.png">
+            <img src="Images/bubble-blue.png">
+            <img src="Images/bubble-green.png">
+            <img src="Images/bubble-pink.png">
+
+        </div>
     <header>
-        <h1>  Welcome to the game!  </h1>
+        <h1> ✨ Welcome to the game! ✨ </h1>
     </header>
     <body> 
         <div class="main-game">
-           <img class="game-img" width="200px" height="200px" src="images/Rock.png">
-           <img class="game-img" width="200px" height="200px" src="images/Paper.png">
-           <img class="game-img" width="200px" height="200px" src="images/scissors.png">
+            <ul>
+                <li> 
+                    <img id="rock" class="game-img" width="200px" height="200px" src="images/Rock.png">
+                    <p> Rock </p>
+                </li>
+                <li>           
+                    <img id="paper" class="game-img" width="200px" height="200px" src="images/Paper.png">
+                    <p> Paper </p></li>
+                <li>
+                    <img id="scissors" class="game-img" width="200px" height="200px" src="images/scissors.png">
+                    <p> Scissors</p>
+                </li>
+           </ul>
         </div>
-        <div class="button"> 
-            <button class="btn"  type="button">Play Now </button> 
-            <div>
+        <div class="results"> 
+            <div class="computer-choice"></div>
+                 <div class= "results-wrapper">
+                    <div class="userScore"></div>
+                    <div class="computerScore"></div>
+                    <div class="winner"></div>
             </div>
+        </div> 
+    
+        <div class="button"> 
+            <button class="btn"  type="button"> Reset Game </button> 
         </div>
     </body>
+    <footer>
+        <img class="footer-img" src="images/share.png">
+        <img class="footer-img" src="images/tw.png">
+        <img class="footer-img" src="images/ig.png"
+    </footer>
+</div>
 </html>
