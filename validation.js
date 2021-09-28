@@ -1,54 +1,39 @@
-
-// User Choice by Image click input 
-document.querySelectorAll('img.gameImg').forEach((element) =>{
-    element.addEventListener('click', event => {
-        let userChoice = event.currentTarget.id;
-        return userChoice; 
-    })
-})
-console.log(userChoice);
+function playRound(playerSelection){
+     let computerSelection = randomComputer(); 
+     if (computerSelection === "rock" && playerSelection === "scissors") {
+          document.querySelector('.result').innerText = "You lose! Rock beats scissors";
+    }else if (computerSelection === "paper" && playerSelection === "rock"){
+          document.querySelector('.result').innerText = "You lose! Paper beats rock";
+    }else if (computerSelection === "scissors" && playerSelection ==="paper"){
+          document.querySelector('.result').innerText =  "You lose! scissors beats paper";
+    }else if (computerSelection === "scissors" && playerSelection === "rock"){
+          document.querySelector('.result').innerText = "You win! rock beats scissors";
+    }else if (computerSelection === "rock" && playerSelection === "paper"){
+          document.querySelector('.result').innerText ="You win! paper beats rock";
+    }else if(computerSelection === "paper" && playerSelection === "scissors") {
+          document.querySelector('.result').innerText = "You win! scissors beats paper"
+    }else {
+          document.querySelector('.result').innerText  = "it's a tie";
+    } 
+    return result;
+ }
 
 
 //Computer Choice 
+function randomComputer(){
+     let options = ['rock', 'paper', 'scissors']
+     return (options[Math.floor(Math.random() *options.length)])
+ }
 
-function computerPlay() {
-    let computerChoice = "";
-    let computerSelection = Math.floor(Math.random(1,3)*10);
-        if (computerSelection <= 1) {
-            computerChoice = "rock";
-        } else if (computerSelection <= 2){
-            computerChoice = "paper";
-        } else {
-            computerChoice = "scissors";
-        }
-    return computerChoice;   
-};
+// User Choice by Image click input 
 
-
-function playRound(){
-    let result = "";
-    let playerSelection = userChoice; 
-    let computerSelection = computerPlay();
-    if (computerSelection === "rock" && playerSelection === "scissors") {
-        result =  "You lose! Rock beats scissors";
-   }else if (computerSelection === "paper" && playerSelection === "rock"){
-        result =  "You lose! Paper beats rock";
-   }else if (computerSelection === "scissors" && playerSelection ==="paper"){
-        result =  "You lose! scissors beats paper";
-   }else if (computerSelection === "scissors" && playerSelection === "rock"){
-        result = "You win! rock beats scissors";
-   }else if (computerSelection === "rock" && playerSelection === "paper"){
-        result = "You win! paper beats rock";
-   }else if(computerSelection === "paper" && playerSelection === "scissors") {
-        result = "You win! scissors beats paper"
-   }else {
-        result = "it's a tie";
-   } 
-   return result;
+function initialize(){
+     const $options = document.querySelectorAll('.gameImg');
+     $options.forEach(option => option.addEventListener('click', (e) => 
+     playRound(e.target.id)));
 }
-playRound();
-console.log(playRound());
 
+initialize();
 
 
 

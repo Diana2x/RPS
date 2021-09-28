@@ -74,9 +74,9 @@
 
 h1 {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 15px;
   font-family: "Cookie", cursive;
-  font-size: 7em;
+  font-size: 5em;
   letter-spacing: 5px;
   text-shadow: 100px rgb(160, 255, 250);
 }
@@ -89,8 +89,9 @@ ul {
 }
 .main-game ul li p {
   text-align: center;
-  font-family: "Rampart One", cursive;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin: 5px;
+  font-size: 1.2em;
 }
 .main-game img {
   padding: 20px;
@@ -105,24 +106,42 @@ ul {
   margin: 5px;
   cursor: pointer;
 }
-.button {
+.results {
   text-align: center;
 }
-.btn {
+.result {
+  margin-top: 10px;
   font-family: "Rampart One", cursive;
-  background-color: transparent;
-  width: 200px;
-  height: 50px;
+  font-size: 2em;
+}
+
+.scores {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1.2em;
-  border: 3px solid #f9deff;
-  border-radius: 5px;
+  display: flex;
+  margin-top: 20px;
+}
+.scores p {
+  padding: 20px;
+}
+
+.reset {
+  text-align: center;
+  margin: 50px;
+}
+.btn {
+  background-color: transparent;
+  padding: 8px 15px 8px 15px;
+  border: 2px solid #f9deff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1em;
 }
 .btn:hover {
   text-decoration: underline;
   cursor: pointer;
   border: 3px solid rgb(160, 255, 250);
 }
-
 footer img {
   margin: 10px;
 }
@@ -136,8 +155,4 @@ footer {
   display: flex;
   justify-content: flex-start;
   height: 60px;
-}
-
-.userColor {
-  border-color: green;
 }
