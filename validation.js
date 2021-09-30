@@ -71,10 +71,11 @@ function playRound(playerSelection){
       $gameImages.classList.remove('hidden');
       const $outcome = document.querySelector('.result');
       $outcome.classList.remove('margin');
+      $outcome.innerText = " Make your move!"
       const $header = document.querySelector('.header'); 
       $header.classList.remove('hidden');
       const $score = document.querySelector(".score p");
-      $score.innerText = " Make your move! ";
+      $score.innerText = "";
  }
 
 
