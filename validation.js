@@ -45,8 +45,6 @@ function playRound(playerSelection){
        $gameImages.classList.add('hidden');
        const $outcome = document.querySelector('.result');
        $outcome.classList.add('margin');
-       const $score = document.querySelector(".score p");
-       $score.style.fontSize = "xx-large";
        const $header = document.querySelector('.header'); 
        $header.classList.add('hidden');
 
@@ -64,7 +62,19 @@ function playRound(playerSelection){
 
 
  function restartGame(){
-      location.reload();
+      userScore = 0;
+      computerScore = 0;
+
+      const $resetButton = document.querySelector('.btn');
+      $resetButton.classList.add('hidden');
+      const $gameImages = document.querySelector('.main-game');
+      $gameImages.classList.remove('hidden');
+      const $outcome = document.querySelector('.result');
+      $outcome.classList.remove('margin');
+      const $header = document.querySelector('.header'); 
+      $header.classList.remove('hidden');
+      const $score = document.querySelector(".score p");
+      $score.innerText = " Make your move! ";
  }
 
 
