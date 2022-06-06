@@ -1,7 +1,5 @@
 # Rock ☄️ | Paper 📄 | Scissors ✂️
 
-Domain hosting website.
-
 Live version: [🙋‍♀️ Here 🙋‍♀️](https://diana2x.github.io/RPS/)
 
 ## Built with
