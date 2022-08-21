@@ -1,6 +1,6 @@
-# Rock ☄️ | Paper 📄 | Scissors ✂️
+# Tic-Tac-Toe
 
-Live version: [🙋‍♀️ Here 🙋‍♀️](https://diana2x.github.io/RPS/)
+Live version: [🙋‍♀️ Here 🙋‍♀️](https://)
 
 ## Built with
 
@@ -10,13 +10,13 @@ Live version: [🙋‍♀️ Here 🙋‍♀️](https://diana2x.github.io/RPS/)
 
 ### About the Project
 
-This is a simple Rock, Paper, Scissors that allows the user to play against the computer.
-The first party to win 5 rounds, will be declared winner.
+This is a tic-tac-toe game, you can play 5 rounds vs the computer.
+are you ready for the challenge?
 
 This a project part of the curriculum for [Javascript - The Odin Project ](https://www.theodinproject.com/) .
 
-![Short preview:](https://i.gyazo.com/80aa18e419a0fa8ec84e7508f212793c.png)
+![Short preview:](https:/)
 
 ### Live Overview:
 
-![Live Demo:](https://media.giphy.com/media/OBLPue9mGgi78WItxT/giphy.gif)
+![Live Demo:](https:)
